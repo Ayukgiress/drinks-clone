@@ -1,8 +1,10 @@
-# React + Vite
+# DrinkList React Component
+This React component, DrinkList, displays a list of drinks fetched from an API and allows users to navigate through the drinks with previous and next buttons. Users can also view details of each drink by clicking on the "Details" button.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features:
+- Fetches a list of drinks from an API (https://www.thecocktaildb.com/api/json/v1/1/search.php?s=) using useState and useEffect.
+- Automatically cycles through the drinks every 5 seconds using setInterval.
+- Allows users to navigate to the previous and next drinks in the list.
+- Displays drink details when the "Details" button is clicked.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Feel free to modify and enhance the component according to your project needs. Enjoy exploring and displaying a variety of drinks to your users! 🍹🥂
