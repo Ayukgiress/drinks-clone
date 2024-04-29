@@ -1,0 +1,211 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url("https://cdn.dribbble.com/users/1822831/screenshots/6467711/attachments/1383392/drinkle-login-comp01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border: 10px solid black;
+    background: rgb(103, 197, 199);
+    background: linear-gradient(
+      43deg,
+      rgba(103, 197, 199, 1) 38%,
+      rgba(62, 8, 20, 1) 73%,
+      rgba(30, 6, 54, 1) 74%,
+      rgba(143, 85, 95, 1) 96%
+    );
+    position: fixed;
+  }
+  
+  .drink-item {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #61babc;
+    -webkit-box-shadow: 3px 2px 68px 29px rgba(1, 3, 5, 1);
+    -moz-box-shadow: 3px 2px 68px 29px rgba(1, 3, 5, 1);
+    box-shadow: 3px 2px 68px 29px rgba(1, 3, 5, 1);
+    border-radius: 10px;
+    height: 85vh;
+    width: 70vw;
+    margin-bottom: 27%;
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+  .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .drink-item.active .details {
+    opacity: 1;
+  }
+  
+  .drink-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .drink-item.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .h3 {
+    text-align: center;
+  }
+  
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 15px;
+    width: 58vw;
+    height: 60vh;
+  }
+  
+  .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 35%;
+  }
+  
+  .img-cont {
+    width: 13vw;
+    height: 29vh;
+  
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: black;
+    transition: all 1s;
+  }
+  
+  h2:hover {
+    color: orange;
+    font-size: 29px;
+  }
+  
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px;
+  }
+  
+  .prev,
+  .next,
+  .det {
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+    font-size: 14px;
+    border: black;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  h3:hover {
+    color: orange;
+    font-size: 29px;
+  }
+  
+  .prev:hover,
+  .next:hover,
+  .det:hover {
+    background-color: purple;
+    font-size: 18px;
+    color: black;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  @media (max-width: 800px) {
+    body {
+      margin: 0;
+    }
+  
+    h2 {
+      font-size: 13px;
+    }
+  
+    .img-cont {
+      height: 15vh;
+      width: 16vw;
+    }
+  
+    .image-container {
+      margin: 0;
+    }
+  
+    .drink-list {
+      margin: 0;
+    }
+  
+    .img {
+      width: 40vw;
+      height: 50vh;
+    }
+  
+    .drink-item {
+      height: 80vh;
+      width: 50vw;
+      margin: 0;
+    }
+  
+    .btns {
+      gap: 10px;
+      margin: 0;
+    }
+  
+    .prev,
+    .next,
+    .det {
+      font-size: 10px;
+      margin: 10px 15px;
+    }
+  }
+  
