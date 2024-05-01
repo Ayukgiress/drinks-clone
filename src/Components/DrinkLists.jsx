@@ -85,13 +85,8 @@ const DrinkLists = () => {
         <p className='overlay'>Details: {drink.strInstructions}</p>
     </div>
 )}
-
-
-
-       
+ 
     </div>
-
-    
 ))}
 
 <div className='btns'>
@@ -99,7 +94,6 @@ const DrinkLists = () => {
             <button className="det" onClick={handleDetails}> Details</button>
             <button className='next' onClick={handleNextClick}> &rarr; </button>
         </div>
-
         </div>
     );
 };
